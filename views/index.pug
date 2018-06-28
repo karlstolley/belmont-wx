@@ -3,3 +3,9 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+  
+  pre #{current_obs.tempf}°
+  
+  script.
+    var temp_trends = '#{trends.temps}'.split(',');
+    
